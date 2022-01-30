@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class Conways : MonoBehaviour
 {
@@ -15,6 +17,11 @@ public class Conways : MonoBehaviour
     private Cell[,] cells = new Cell[192, 108];
     private int[,] states = new int[192, 108];
     private int[,] rule = new int[192, 108];
+
+    [SerializeField]
+    private TextMeshProUGUI LifeStatus;
+    [SerializeField]
+    private TextMeshProUGUI DemoGraphicView;
 
 
     // Start is called before the first frame update
@@ -55,10 +62,12 @@ public class Conways : MonoBehaviour
             if (start)
             {
                 InvokeRepeating("UpdateStates", 0.1f, updateRate);
+                LifeStatus.text = ("Life Status: Growing");
             }
             else
             {
                 CancelInvoke("UpdateStates");
+                LifeStatus.text = ("Life Status: Paused");
             }
         }
 
@@ -70,6 +79,7 @@ public class Conways : MonoBehaviour
                 for (int y = 0; y < gridSizeY; y++)
                 {
                     cells[x, y].SetMode(0);
+                    DemoGraphicView.text = ("Demographic View: Conway");
                 }
             }
         }
@@ -82,6 +92,7 @@ public class Conways : MonoBehaviour
                 for (int y = 0; y < gridSizeY; y++)
                 {
                     cells[x, y].SetMode(1);
+                    DemoGraphicView.text = ("Demographic View: Contour");
                 }
             }
         }
@@ -94,6 +105,7 @@ public class Conways : MonoBehaviour
                 for (int y = 0; y < gridSizeY; y++)
                 {
                     cells[x, y].SetMode(2);
+                    DemoGraphicView.text = ("Demographic View: Contour Tracking");
                 }
             }
         }
@@ -106,6 +118,7 @@ public class Conways : MonoBehaviour
                 for (int y = 0; y < gridSizeY; y++)
                 {
                     cells[x, y].SetMode(3);
+                    DemoGraphicView.text = ("Demographic View: Ocean of Life");
                 }
             }
         }
