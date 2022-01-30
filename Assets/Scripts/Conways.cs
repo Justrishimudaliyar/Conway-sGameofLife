@@ -23,12 +23,18 @@ public class Conways : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI DemoGraphicView;
 
+    [SerializeField]
+    private PauseManagement pauseMenuPanel;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         //Create grid and fill it with cells
         CreateGrid(gridSizeX, gridSizeY);
+
+        Time.timeScale = 1f;
 
         if(randomizeAtStart)
         {
@@ -69,6 +75,11 @@ public class Conways : MonoBehaviour
                 CancelInvoke("UpdateStates");
                 LifeStatus.text = ("Life Status: Paused");
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.CapsLock))
+        {
+            pauseMenuPanel.Pause();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
