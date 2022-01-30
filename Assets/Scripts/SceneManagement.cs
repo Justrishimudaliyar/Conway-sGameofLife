@@ -17,7 +17,7 @@ public class SceneManagement : MonoBehaviour
     }
     public void Play()
     {
-        SceneManager.LoadScene("Conway");
+        SceneManager.LoadScene("GameModeScene");
     }
 
     public void About()

@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class Conways : MonoBehaviour
 {
     public int gridSizeX, gridSizeY;
-    public bool randomizeAtStart = false;
-    public bool start = true;
+    public static bool randomizeAtStart;
+    public static bool start;
     [Range(0.00001f, 3f)] public float updateRate  = 0.1f;
 
     [Space]
