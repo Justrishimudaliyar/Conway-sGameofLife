@@ -1,1 +1,1 @@
-
+Based on the famous Conway's game of life, I have tried to gamify it by making it a chain reaction-based zen game with ambient music on loop and different visual modes for a relaxing effect. Sandbox mode to take matters into your own hand and control life, and Readymade mode to really just sit back, enjoy the life unfurl.
