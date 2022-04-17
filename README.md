@@ -2,14 +2,14 @@ Based on the famous Conway's game of life, I have tried to gamify it by making i
 
 # ScreenShots
 <p align="center">
-<img src="Conway-sGameofLife/ScreenShots/cONWAY.png"> &nbsp&nbsp&nbsp&nbsp
+<img src="ScreenShots/cONWAY.png"> &nbsp&nbsp&nbsp&nbsp
 </p>
 <p align="center">
-<img src="Conway-sGameofLife/ScreenShots/Instructions2.jpg"> &nbsp&nbsp&nbsp&nbsp
+<img src="ScreenShots/Instructions2.jpg"> &nbsp&nbsp&nbsp&nbsp
 </p>
 <p align="center">
-<img src="Conway-sGameofLife/ScreenShots/Credits.jpg"> &nbsp&nbsp&nbsp&nbsp
+<img src="ScreenShots/Credits.jpg"> &nbsp&nbsp&nbsp&nbsp
 </p>
 <hr>
 
-#try it here [Conway's Game of Life](https://justrishimudaliyar.github.io/GravityAndDrop/GravityAndDropBuild/index.html)
+#try it here [Conway's Game of Life](https://justrishimudaliyar.github.io/Conway-sGameofLife/GameBuild/index.html)
