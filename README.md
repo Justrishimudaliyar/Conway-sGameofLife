@@ -13,3 +13,4 @@ Based on the famous Conway's game of life, I have tried to gamify it by making i
 <hr>
 
 #try it here [Conway's Game of Life](https://justrishimudaliyar.github.io/Conway-sGameofLife/GameBuild/index.html)
+Play in fullscreen for best results
